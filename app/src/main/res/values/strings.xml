@@ -2,5 +2,15 @@
     <string name="app_name">AlPhA</string>
     <string name="lbllogin">Login</string>
     <string name="lblabout">About Us</string>
-    <string name="lblcontact">Contact Us</string>
+    <string name="lblcontact">Contact</string>
+    <string name="edtName">Enter your fullname</string>
+    <string name="edtEmail">Enter email address</string>
+    <string name="edtPhone">Enter your phone number</string>
+    <string name="txtGet">Get in touch through....</string>
+    <string name="button">Send</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="txtContact">Contact Us</string>
+    <string name="txtGroup">Group Alpha</string>
+
 </resources>

@@ -26,12 +26,12 @@
             app:srcCompat="@drawable/alpha" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:fontFamily="@font/annie_use_your_telescope"
-            android:text="Group Alpha"
+            android:text="@string/txtGroup"
             android:textColor="#A4E4EA"
             android:textSize="36sp"
             android:textStyle="bold|italic" />
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
-            android:id="@+id/txtName1"
+            android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Vasukumar Patel - 18SOECE11042"
