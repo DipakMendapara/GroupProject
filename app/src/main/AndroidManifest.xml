@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Contect"
+            android:name=".Contact"
             android:label="@string/lblcontact"></activity>
         <activity
             android:name=".About"

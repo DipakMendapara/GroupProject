@@ -1,11 +1,13 @@
 package com.example.myproject;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -57,6 +59,38 @@ public class Login extends AppCompatActivity {
         }
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.custom_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mnuSplash:
+                Intent intentAbout = new Intent(Login.this,MainActivity.class);
+                startActivity(intentAbout);
+                Toast.makeText(this, "Splash Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mnuLogin:
+                Toast.makeText(this, "Login Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mnuAbout:
+                Intent intentContact = new Intent(Login.this,About.class);
+                startActivity(intentContact);
+                Toast.makeText(this, "About Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mnuContact:
+                Intent intentLogin = new Intent(Login.this, Contact.class);
+                startActivity(intentLogin);
+                Toast.makeText(this, "Contact Clicked", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 

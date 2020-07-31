@@ -7,28 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
-public class About extends AppCompatActivity {
-
-    Button Contect;
+public class Contact extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
-
-        Contect = (Button)findViewById(R.id.btnContect);
-        Contect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(About.this, Contact.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        setContentView(R.layout.activity_contact);
     }
 
     @Override
@@ -41,21 +27,21 @@ public class About extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mnuSplash:
-                Intent intentAbout = new Intent(About.this,MainActivity.class);
+                Intent intentAbout = new Intent(Contact.this,MainActivity.class);
                 startActivity(intentAbout);
                 Toast.makeText(this, "Splash Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuLogin:
-                Intent intentLogin = new Intent(About.this,Login.class);
+                Intent intentLogin = new Intent(Contact.this,Login.class);
                 startActivity(intentLogin);
                 Toast.makeText(this, "Login Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuAbout:
+                Intent intentContact = new Intent(Contact.this,About.class);
+                startActivity(intentContact);
                 Toast.makeText(this, "About Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuContact:
-                Intent intentContact = new Intent(About.this, Contact.class);
-                startActivity(intentContact);
                 Toast.makeText(this, "Contact Clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
