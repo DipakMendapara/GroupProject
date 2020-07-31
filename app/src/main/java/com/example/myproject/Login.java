@@ -24,8 +24,8 @@ public class Login extends AppCompatActivity {
         EditText Edittxtpass=findViewById(R.id.edtPassword);
         String Username=Edittxtuser.getText().toString();
         String Password=Edittxtpass.getText().toString();
-        String u="alpha@gmail.com";
-        String p="1234";
+        String u="alpha03@gmail.com";
+        String p="12345";
         String blank="";
         if(Username.equals(blank) ||  Password.equals(blank))
         {

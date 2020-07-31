@@ -78,9 +78,12 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/round_button"
         android:onClick="Login"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
