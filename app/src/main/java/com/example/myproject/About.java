@@ -41,8 +41,8 @@ public class About extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mnuSplash:
-                Intent intentAbout = new Intent(About.this,MainActivity.class);
-                startActivity(intentAbout);
+                Intent intentSplash = new Intent(About.this,MainActivity.class);
+                startActivity(intentSplash);
                 Toast.makeText(this, "Splash Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuLogin:

@@ -71,21 +71,21 @@ public class Login extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mnuSplash:
-                Intent intentAbout = new Intent(Login.this,MainActivity.class);
-                startActivity(intentAbout);
+                Intent intentSplash = new Intent(Login.this,MainActivity.class);
+                startActivity(intentSplash);
                 Toast.makeText(this, "Splash Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuLogin:
                 Toast.makeText(this, "Login Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuAbout:
-                Intent intentContact = new Intent(Login.this,About.class);
-                startActivity(intentContact);
+                Intent intentAbout = new Intent(Login.this,About.class);
+                startActivity(intentAbout);
                 Toast.makeText(this, "About Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuContact:
-                Intent intentLogin = new Intent(Login.this, Contact.class);
-                startActivity(intentLogin);
+                Intent intentContact = new Intent(Login.this, Contact.class);
+                startActivity(intentContact);
                 Toast.makeText(this, "Contact Clicked", Toast.LENGTH_SHORT).show();
                 break;
         }

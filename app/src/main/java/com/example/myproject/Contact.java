@@ -27,8 +27,8 @@ public class Contact extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mnuSplash:
-                Intent intentAbout = new Intent(Contact.this,MainActivity.class);
-                startActivity(intentAbout);
+                Intent intentSplash = new Intent(Contact.this,MainActivity.class);
+                startActivity(intentSplash);
                 Toast.makeText(this, "Splash Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuLogin:
@@ -37,8 +37,8 @@ public class Contact extends AppCompatActivity {
                 Toast.makeText(this, "Login Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuAbout:
-                Intent intentContact = new Intent(Contact.this,About.class);
-                startActivity(intentContact);
+                Intent intentAbout = new Intent(Contact.this,About.class);
+                startActivity(intentAbout);
                 Toast.makeText(this, "About Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnuContact:
