@@ -11,9 +11,7 @@ import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
-        EditText Username;
-        EditText Password;
-        Button Login;
+
 
         private static int SPLASH_SCREEN_OUT = 2000;
         @Override
@@ -21,22 +19,15 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(saveInstanceState);
             setContentView(R.layout.activity_main);
 
-            Username = (EditText) findViewById(R.id.edtUsername);
-            Password = (EditText) findViewById(R.id.edtPassword);
-            Login = (Button) findViewById(R.id.btnLogin);
-            Login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(Login.this,About.class);
-                    startActivity(intent);
-                }
-            });
+
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     Intent intent = new Intent(MainActivity.this, Login.class);
                     startActivity(intent);
+                    finish();
                 }
             },SPLASH_SCREEN_OUT);
+
         }
 }
