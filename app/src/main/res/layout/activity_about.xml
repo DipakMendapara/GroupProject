@@ -128,6 +128,7 @@
         android:layout_marginEnd="100dp"
         android:background="@drawable/round_button"
         android:text="Contact"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />

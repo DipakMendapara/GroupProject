@@ -8,8 +8,8 @@
         android:title="Login"/>
     <item
         android:id="@+id/mnuAbout"
-        android:title="About"/>
+        android:title="About Us"/>
     <item
         android:id="@+id/mnuContact"
-        android:title="Contact"/>
+        android:title="Contact Us"/>
 </menu>

@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">ALPHA</string>
+    <string name="app_name">AlpHa</string>
     <string name="lbllogin">Login</string>
     <string name="lblabout">About Us</string>
-    <string name="lblcontact">Contact</string>
+    <string name="lblcontact">Contact Us</string>
     <string name="edtName">Enter your fullname</string>
     <string name="edtEmail">Enter email address</string>
     <string name="edtPhone">Enter your phone number</string>

@@ -85,7 +85,8 @@
             android:layout_marginEnd="100dp"
             android:background="@drawable/round_button"
             android:onClick="Login"
-            android:text="Login" />
+            android:text="Login"
+            android:textStyle="italic" />
 
     </LinearLayout>
 

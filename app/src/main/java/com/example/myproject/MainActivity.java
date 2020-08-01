@@ -30,16 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             },SPLASH_SCREEN_OUT);
 
-        }
-
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            getMenuInflater().inflate(R.menu.custom_menu,menu);
-            return super.onCreateOptionsMenu(menu);
-    }
-
-        @Override
-        public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        }@Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mnuSplash:
                 Toast.makeText(this, "Splash Clicked", Toast.LENGTH_SHORT).show();
@@ -63,4 +55,12 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            getMenuInflater().inflate(R.menu.custom_menu,menu);
+            return super.onCreateOptionsMenu(menu);
+    }
+
+
 }
