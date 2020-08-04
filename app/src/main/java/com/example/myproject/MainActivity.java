@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         private static int SPLASH_SCREEN_OUT = 2000;
         @Override
         protected void onCreate(Bundle saveInstanceState) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
             super.onCreate(saveInstanceState);
             setContentView(R.layout.activity_main);
 
